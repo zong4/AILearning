@@ -19,7 +19,7 @@ size = width, height = 600, 400
 screen = pygame.display.set_mode(size)
 
 # Fonts
-OPEN_SANS = "assets/fonts/OpenSans-Regular.ttf"
+OPEN_SANS = "./minesweeper/assets/fonts/OpenSans-Regular.ttf"
 smallFont = pygame.font.Font(OPEN_SANS, 20)
 mediumFont = pygame.font.Font(OPEN_SANS, 28)
 largeFont = pygame.font.Font(OPEN_SANS, 40)
@@ -32,9 +32,9 @@ cell_size = int(min(board_width / WIDTH, board_height / HEIGHT))
 board_origin = (BOARD_PADDING, BOARD_PADDING)
 
 # Add images
-flag = pygame.image.load("assets/images/flag.png")
+flag = pygame.image.load("./minesweeper/assets/images/flag.png")
 flag = pygame.transform.scale(flag, (cell_size, cell_size))
-mine = pygame.image.load("assets/images/mine.png")
+mine = pygame.image.load("./minesweeper/assets/images/mine.png")
 mine = pygame.transform.scale(mine, (cell_size, cell_size))
 
 # Create game and AI agent
@@ -50,7 +50,6 @@ lost = False
 instructions = True
 
 while True:
-
     # Check if game quit
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -191,6 +190,12 @@ while True:
             else:
                 print("AI making safe move.")
             time.sleep(0.2)
+
+            # use flags to mark mines
+            for i in range(HEIGHT):
+                for j in range(WIDTH):
+                    if (i, j) in ai.mines:
+                        flags.add((i, j))
 
         # Reset game state
         elif resetButton.collidepoint(mouse):
