@@ -1,4 +1,4 @@
-from logic import *
+from logic import Symbol, And, Or, Not, Implication, model_check
 
 rain = Symbol("rain") # It's raining.
 hagrid = Symbol("hagrid") # Zong will visit hagrid.

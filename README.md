@@ -1,15 +1,26 @@
 # AILearning
 
-# Maze
+## Search
+
+### Maze
 
 
 
-# Tic-Tac-Toe
+### Tic-Tac-Toe
+
+
+## Knowledge
+
+### Logic
 
 
 
-# Logic
+### Mine Sweeper
 
+### Knight Or Knave
 
+### 狼人杀
 
-# Mine Sweeper
+## Uncertainty
+
+### Page Rank
