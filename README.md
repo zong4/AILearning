@@ -33,3 +33,6 @@ Scan the description http://zzoonng.top/2025/01/29/AI%E5%AD%A6%E4%B9%A000/.
 1. Traffic
 
 ## Language
+
+1. Parser
+2. Attention
