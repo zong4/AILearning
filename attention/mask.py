@@ -17,7 +17,7 @@ PIXELS_PER_WORD = 200
 
 
 def main():
-    text = input("Text: ")
+    text = "The turtle moves slow across the [MASK]."
 
     # Tokenize input
     tokenizer = AutoTokenizer.from_pretrained(MODEL)
@@ -28,6 +28,7 @@ def main():
 
     # Use model to process input
     model = TFBertForMaskedLM.from_pretrained(MODEL)
+    print(model.config.num_attention_heads)
     result = model(**inputs, output_attentions=True)
 
     # Generate predictions
@@ -70,12 +71,16 @@ def visualize_attentions(tokens, attentions):
     (starting count from 1).
     """
     for i, layer in enumerate(attentions):
-        for j, head in enumerate(layer):
+        print(f"Layer {i + 1} attention shape: {layer.shape}")
+        num_heads = layer.shape[1]
+        print(f"Layer {i + 1} has {len(layer)} heads.")
+        for j in range(num_heads):
+            head_attention = layer[0][j].numpy()
             generate_diagram(
                 i + 1,
                 j + 1,
                 tokens,
-                head[0].numpy()
+                head_attention
             )
 
 
