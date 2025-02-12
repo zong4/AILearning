@@ -33,6 +33,7 @@ Scan the description http://zong4.github.io/2025/01/29/AI%E5%AD%A6%E4%B9%A000/.
 ## Neural Networks
 
 1. Traffic
+2. Cats And Dogs
 
 ## Language
 
