@@ -19,6 +19,7 @@ Scan the description http://zong4.github.io/2025/01/29/AI%E5%AD%A6%E4%B9%A000/.
 1. Page Rank
 2. Heredity
 3. Sherlock Stories
+4. Rock Paper Scissors
 
 ## Optimization
 
@@ -27,6 +28,7 @@ Scan the description http://zong4.github.io/2025/01/29/AI%E5%AD%A6%E4%B9%A000/.
 ## Learning
 
 1. Shopping
+2. Nim
 
 ## Neural Networks
 
@@ -36,3 +38,7 @@ Scan the description http://zong4.github.io/2025/01/29/AI%E5%AD%A6%E4%B9%A000/.
 
 1. Parser
 2. Attention
+
+## Other
+
+1. Prisoner's Dilemma
