@@ -41,6 +41,7 @@ Scan the description http://zong4.github.io/2025/01/29/AI%E5%AD%A6%E4%B9%A000/.
 
 1. Parser
 2. Attention
+3. SMS Text Classifier
 
 ## Other
 
